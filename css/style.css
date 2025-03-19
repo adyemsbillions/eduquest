@@ -1,0 +1,145 @@
+.our-team {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.our-team .pic {
+    background: #f6931e;
+    transition: all 0.3s ease;
+}
+
+.our-team:hover .pic {
+    padding: 10px;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.our-team .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.our-team .team-content {
+    width: 100%;
+    padding: 15px;
+    background: #f6931e;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.our-team:hover .team-content {
+    opacity: 1;
+    bottom: 0;
+}
+
+.our-team .title {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 5px;
+}
+
+.our-team .post {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.our-team .social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.our-team .social li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.our-team .social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    background: #333;
+    transition: background 0.3s ease;
+}
+
+.our-team .social li a:hover {
+    background: #555;
+}
+
+@media only screen and (max-width: 767px) {
+    .our-team {
+        margin-bottom: 20px;
+    }
+}
+.blog-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Optional: Allows horizontal scrolling if needed */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .blog-card {
+    flex: 0 0 auto; /* Ensures each card has fixed size */
+    width: 300px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .blog-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .blog-content {
+    padding: 15px;
+  }
+
+  .blog-content h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .blog-read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .blog-read-more:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .blog-container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .blog-card {
+      width: 100%; /* Take full width on smaller screens */
+      margin-bottom: 20px; /* Optional: Adds space between stacked items */
+    }
+  }
